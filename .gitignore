@@ -1,0 +1,40 @@
+# ── Environment variables — NEVER commit real values ──
+.env
+.env.local
+.env.*.local
+# ✅ .env.example is safe to commit (no real secrets)
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Virtual environments ──
+venv/
+env/
+.venv/
+ENV/
+
+# ── Streamlit ──
+.streamlit/secrets.toml
+
+# ── OS & Editor ──
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.sw?
+
+# ── Logs ──
+*.log
+logs/
+
+# ── Generated audio (gTTS temp files) ──
+*.mp3
